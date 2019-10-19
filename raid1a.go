@@ -27,10 +27,5 @@ func Raid1a(x, y int) {
 				z01.PrintRune('\n')
 			}
 		}
-	} else {
-		for k := 0; k < y; k++ {
-			z01.PrintRune('\\')
-			z01.PrintRune('n')
-		}
 	}
 }
