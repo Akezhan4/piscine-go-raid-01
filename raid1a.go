@@ -5,7 +5,7 @@ import (
 )
 
 func Raid1a(x, y int) {
-	for i := 0; i <= y; i++ {
+	for i := 0; i < y; i++ {
 		if i == 0 || i == y-1 {
 			for j := 0; j < x; j++ {
 				if (j == 0) || (j == x-1) {
@@ -15,7 +15,6 @@ func Raid1a(x, y int) {
 				}
 			}
 			z01.PrintRune('\n')
-			z01.PrintRune('n')
 		} else if i != 0 || i != y-1 {
 			for j := 0; j < x; j++ {
 				if (j == 0) || (j == x-1) {
@@ -25,7 +24,6 @@ func Raid1a(x, y int) {
 				}
 			}
 			z01.PrintRune('\n')
-			z01.PrintRune('n')
 		}
 	}
 }
